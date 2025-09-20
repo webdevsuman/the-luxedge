@@ -12,7 +12,7 @@ const Header = () => {
         <Image src="/brandLogo.png" height={40} width={100} alt="brandlogo" />
       </div>
       <nav className="col-span-4 flex gap-5 pl-5 rounded-tl-4xl items-center">
-        <ul className="flex justify-around gap-5 py-5 items-center">
+        <ul className="flex justify-around gap-5 py-5 items-center text-xs">
           <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
             Home <ArrowOutwardIcon fontSize="small" />
           </li>

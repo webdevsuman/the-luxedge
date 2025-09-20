@@ -1,6 +1,7 @@
 "use client";
 import { useTest } from "@/hooks/react-query/useTest";
 import { RootState } from "@/redux-toolkit/store/store";
+import Hero from "@/ui/components/Hero/Hero";
 import { useSelector } from "react-redux";
 
 export default function Home() {
@@ -13,9 +14,12 @@ export default function Home() {
   console.log("Loading state from Redux", loading);
 
   //---------------------------Checking TanStack setup working
-  const {isLoading} = useTest();
-  console.log("From tanstack query:",isLoading);
-  
+  const { isLoading } = useTest();
+  console.log("From tanstack query:", isLoading);
 
-  return <div></div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }

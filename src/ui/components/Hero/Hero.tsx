@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "../../styles/Hero.module.css";
 import Image from "next/image";
@@ -39,7 +40,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div style={{position:"absolute", bottom:"0px",maxHeight:"1px"}}>
+      <div style={{ position: "absolute", bottom: "0px", maxHeight: "1px" }}>
         <HotelSearchBar />
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 import { useTest } from "@/hooks/react-query/useTest";
 import { RootState } from "@/redux-toolkit/store/store";
+import FeaturedHotels from "@/ui/components/FeaturedHotels/FeaturedHotels";
 import Hero from "@/ui/components/Hero/Hero";
 import { useSelector } from "react-redux";
 
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <FeaturedHotels />
     </div>
   );
 }

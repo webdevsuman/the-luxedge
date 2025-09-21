@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "../../styles/Hero.module.css";
 import Image from "next/image";
+import HotelSearchBar from "../HotelSearchBar/HotelSearchBar";
 
 const Hero = () => {
   return (
     <div
       id="hero"
-      className={`${styles.background} flex items-center justify-center`}
+      className={`${styles.background} flex flex-col items-center justify-center`}
     >
       <div className="text-center text-white flex flex-col items-center">
         <div className="my-2">
@@ -37,6 +38,9 @@ const Hero = () => {
             Browse Hotels
           </button>
         </div>
+      </div>
+      <div style={{position:"absolute", bottom:"0px",maxHeight:"1px"}}>
+        <HotelSearchBar />
       </div>
     </div>
   );

@@ -5,8 +5,8 @@ import LocationTabs from "./LocationTabs";
 
 const FeaturedHotels = () => {
   return (
-    <div className="text-center my-10 px-20">
-      <h2 className="capitalize text-3xl font-medium text-[#341D14]">
+    <div className="text-center my-10 px-40">
+      <h2 className="capitalize text-3xl font-medium text-[#341D14] mb-10">
         Discover{" "}
         <span className={`${styles.playfair} italic font-semibold`}>
           Handpicked Hotels

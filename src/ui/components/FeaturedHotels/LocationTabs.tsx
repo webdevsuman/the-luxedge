@@ -3,6 +3,8 @@ import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import { Typography } from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -42,18 +44,34 @@ export default function LocationTabs() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box
+        sx={{ borderBottom: 1, borderColor: "divider" }}
+        className="flex items-center justify-between"
+      >
         <Tabs
-          className="!font-bold"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Kolkata" {...a11yProps(0)} />
-          <Tab label="New Delhi & NCR" {...a11yProps(1)} />
-          <Tab label="Mumbai" {...a11yProps(2)} />
-          <Tab label="Bangalore" {...a11yProps(3)} />
+          <Tab sx={{ fontWeight: "bold" }} label="Kolkata" {...a11yProps(0)} />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="New Delhi & NCR"
+            {...a11yProps(1)}
+          />
+          <Tab sx={{ fontWeight: "bold" }} label="Mumbai" {...a11yProps(2)} />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="Bangalore"
+            {...a11yProps(3)}
+          />
         </Tabs>
+        <Typography color="primary" sx={{ fontWeight: "bold" }}>
+          See more(Kolkata) Hotels{" "}
+          <span>
+            <ArrowOutwardIcon />
+          </span>
+        </Typography>
       </Box>
       <CustomTabPanel value={value} index={0}>
         Item One

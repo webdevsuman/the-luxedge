@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import HotelCard from "../HotelCard/HotelCard";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -74,7 +75,7 @@ export default function LocationTabs() {
         </Typography>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Item One
+        <HotelCard />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         Item Two

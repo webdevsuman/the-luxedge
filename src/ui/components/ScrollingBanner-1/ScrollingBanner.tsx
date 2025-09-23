@@ -16,7 +16,7 @@ const phrases = [
   ["Easy", "Booking"],
   ["24/7", "Support"],
   ["Trusted", "Hotels"],
-  ["Travel", "Hassle-Free"],
+  ["Travel", "Hassle-Free"],[" "," "]
 ];
 
 const ScrollingBanner = () => {
@@ -27,7 +27,7 @@ const ScrollingBanner = () => {
         whiteSpace: "nowrap",
         bgcolor: "#fdd9a0",
         border: "1px solid #d4a373",
-        py: 2,
+        py: 0,
         position: "relative",
       }}
     >
@@ -57,7 +57,7 @@ const ScrollingBanner = () => {
                   component="span"
                   sx={{
                     fontFamily: "var(--font-dmSans)",
-                    fontSize: "35px",
+                    fontSize: "25px",
                     lineHeight: "45px",
                     letterSpacing: "-0.03em",
                     color: "#5a2d0c",
@@ -69,7 +69,7 @@ const ScrollingBanner = () => {
                     component="span"
                     sx={{
                       fontFamily: "var(--font-playfair)",
-                      fontSize: "40px",
+                      fontSize: "30px",
                       lineHeight: "55px",
                       letterSpacing: "-0.03em",
                       fontWeight: 600,
@@ -87,7 +87,7 @@ const ScrollingBanner = () => {
                     sx={{
                       mx: 2,
                       fontFamily: "var(--font-playfair)",
-                      fontSize: "40px",
+                      fontSize: "30px",
                       lineHeight: "55px",
                       letterSpacing: "-0.03em",
                       fontWeight: 600,

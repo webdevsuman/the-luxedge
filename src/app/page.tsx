@@ -1,6 +1,7 @@
 "use client";
 import { useTest } from "@/hooks/react-query/useTest";
 import { RootState } from "@/redux-toolkit/store/store";
+import BookHotelsBanner from "@/ui/components/BookHotelsBanner/BookHotelsBanner";
 import Destination from "@/ui/components/Destination/Destination";
 import FeaturedHotels from "@/ui/components/FeaturedHotels/FeaturedHotels";
 import Hero from "@/ui/components/Hero/Hero";
@@ -26,14 +27,19 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <OffersSection />
+      <div className="px-30 py-10">
+        <OffersSection />
+      </div>
       {/* Banner 1 */}
       <ScrollingBanner1 />
       <Destination />
       {/* Banner 1 */}
       <ScrollingBanner2 />
       <FeaturedHotels />
-      <SubscribeSection/>
+      <BookHotelsBanner />
+      <div className="px-40 py-20">
+        <SubscribeSection />
+      </div>
       <ScrollingBanner1 />
     </div>
   );

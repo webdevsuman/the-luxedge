@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Button, Paper } from "@mui/material";
 import React from "react";
 import styles from "../../styles/HotelCard.module.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -74,9 +74,12 @@ const HotelCard = () => {
         </div>
       </div>
       <div className="flex justify-between items-center my-4">
-        <button className="px-4 py-2 bg-[#b3843f] rounded-full text-white">
+        <Button
+          variant="contained"
+          className="!px-4 !py-2 bg-[#B3843F] text-white !rounded-full !capitalize"
+        >
           View Details
-        </button>
+        </Button>
         <p className="flex items-center">
           <span className="font-bold">&#8377;1500</span>
           <span className="text-gray-500 text-xs">/Night</span>

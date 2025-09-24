@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/Hero.module.css";
 import Image from "next/image";
 import HotelSearchBar from "../HotelSearchBar/HotelSearchBar";
+import { Button } from "@mui/material";
 
 const Hero = () => {
   return (
@@ -32,12 +33,18 @@ const Hero = () => {
           extraordinary.
         </p>
         <div className="flex gap-5 my-5">
-          <button className="px-4 py-2 bg-white/20 rounded-full">
+          <Button
+            variant="contained"
+            className="!px-4 !py-2 !text-lg !bg-white/20 !rounded-full !capitalize"
+          >
             Discover More
-          </button>
-          <button className="px-4 py-2 bg-[#B3843F] rounded-full">
+          </Button>
+          <Button
+            variant="contained"
+            className="!px-4 !py-2 !text-lg bg-[#B3843F] text-white !rounded-full !capitalize"
+          >
             Browse Hotels
-          </button>
+          </Button>
         </div>
       </div>
       <div style={{ position: "absolute", bottom: "0px", maxHeight: "1px" }}>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import SearchIcon from "@mui/icons-material/Search";
+import { Button } from "@mui/material";
 
 const Header = () => {
   return (
@@ -38,9 +39,12 @@ const Header = () => {
         <div className="flex items-center text-orange-600">
           <SearchIcon color="inherit" />
         </div>
-        <button className="flex items-center bg-[#B3843F] text-white rounded-full px-5 py-3">
+        <Button
+          variant="contained"
+          className="!px-5 !py-3 !text-lg bg-[#B3843F] text-white !rounded-full !capitalize"
+        >
           Login | Register
-        </button>
+        </Button>
       </nav>
     </div>
   );

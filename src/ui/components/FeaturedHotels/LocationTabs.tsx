@@ -6,12 +6,9 @@ import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import HotelCard from "../HotelCard/HotelCard";
+import { TabPanelProps } from "@/typescript/interface/HomepageInterfaces";
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
+
 
 function CustomTabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;

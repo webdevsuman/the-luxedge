@@ -1,4 +1,4 @@
-// app/destinations/page.tsx
+
 "use client";
 
 import { Box, Container, Typography, Card, CardMedia, CardContent } from "@mui/material";
@@ -18,7 +18,7 @@ const destinations = [
 export default function DestinationsPage() {
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
-      {/* Title Section */}
+     
       <Box sx={{ mb: 6 }}>
         <Typography variant="h4" fontWeight="bold">
           Popular{" "}
@@ -36,7 +36,7 @@ export default function DestinationsPage() {
         </Typography>
       </Box>
 
-      {/* Destination Flex Grid */}
+     
       <Box
         sx={{
           display: "flex",
@@ -49,8 +49,8 @@ export default function DestinationsPage() {
           <Box
             key={index}
             sx={{
-              flex: "1 1 calc(33.333% - 24px)", // 3 per row on desktop
-              minWidth: "280px", // ensures wrapping on smaller screens
+              flex: "1 1 calc(33.333% - 24px)", 
+              minWidth: "280px", 
               maxWidth: "400px",
             }}
           >

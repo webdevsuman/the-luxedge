@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Box, Container, Typography, Card, CardMedia, CardContent } from "@mui/material";

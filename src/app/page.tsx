@@ -2,7 +2,7 @@
 import { useTest } from "@/hooks/react-query/useTest";
 import { RootState } from "@/redux-toolkit/store/store";
 import BookHotelsBanner from "@/ui/components/BookHotelsBanner/BookHotelsBanner";
-import Destination from "@/ui/components/Destination/Destination";
+import Destination from "@/ui/components/DestinationsPage/DestinationsPage"
 import FeaturedHotels from "@/ui/components/FeaturedHotels/FeaturedHotels";
 import Hero from "@/ui/components/Hero/Hero";
 import OffersSection from "@/ui/components/OfferSection/OffersSection";
@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       {/* Banner 1 */}
       <ScrollingBanner1 />
-      <Destination />
+      <  Destination />
       {/* Banner 1 */}
       <ScrollingBanner2 />
       <FeaturedHotels />

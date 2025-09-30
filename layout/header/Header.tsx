@@ -5,6 +5,7 @@ import React from "react";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -14,15 +15,19 @@ const Header = () => {
       </div>
       <nav className="col-span-4 flex gap-5 pl-5 rounded-tl-4xl items-center">
         <ul className="flex justify-around gap-5 py-5 items-center text-xs">
-          <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
-            Home <ArrowOutwardIcon fontSize="small" />
-          </li>
+          <Link href="/">
+            <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
+              Home <ArrowOutwardIcon fontSize="small" />
+            </li>
+          </Link>
           <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
             About <ArrowOutwardIcon fontSize="small" />
           </li>
-          <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
-            Browse Hotels <ArrowOutwardIcon fontSize="small" />
-          </li>
+          <Link href="/browse">
+            <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
+              Browse Hotels <ArrowOutwardIcon fontSize="small" />
+            </li>
+          </Link>
           <li className="flex items-center rounded-3xl border border-gray-300 px-3 py-2">
             Policies <ArrowOutwardIcon fontSize="small" />
           </li>
